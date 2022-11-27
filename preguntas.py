@@ -156,6 +156,11 @@ def pregunta_09():
     return df
 
 
+def formatDataFrame(df):
+    aux=sorted([i for i in df["_c2"]])
+    aux=[str(i) for i in aux]
+    return(":".join(aux))
+
 def pregunta_10():
     """
     Construya una tabla que contenga _c1 y una lista separada por ':' de los valores de
@@ -175,10 +180,7 @@ def pregunta_10():
     total.set_index("_c1", inplace=True)
     return (total)
 
-def formatDataframe11(df):
-    aux=sorted([i for i in df["_c4"]])
-    aux=[str(i) for i in aux]
-    return(",".join(aux))
+
 
 
 def pregunta_11():
