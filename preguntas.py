@@ -156,10 +156,10 @@ def pregunta_09():
     return df
 
 
-def formatDataframe11(df):
-    aux=sorted([i for i in df["_c4"]])
+def formatDataFrame(df):
+    aux=sorted([i for i in df["_c2"]])
     aux=[str(i) for i in aux]
-    return(",".join(aux))
+    return(":".join(aux))
 
 def pregunta_10():
     """
